@@ -6,8 +6,8 @@
     "r",
     "plumber"
   ],
-  "repository": "https://github.com/virtualstaticvoid/heroku-docker-r-plumber-app",
-  "logo": "https://github.com/virtualstaticvoid/heroku-docker-r-plumber-app/raw/master/logo.png",
+  "repository": "https://github.com/Adsata/heroku-docker-r",
+  "logo": "",
   "success_url": "/plot",
   "formation": {
     "web": {
