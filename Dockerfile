@@ -1,4 +1,3 @@
-
 FROM virtualstaticvoid/heroku-docker-r:plumber
 
 # ONBUILD will copy application files into the container
