@@ -31,3 +31,7 @@ ONBUILD RUN if [ -f "/app/packrat/init.R" ]; then /usr/bin/R --no-init-file --no
 
 # on build, renv restore packages
 ONBUILD RUN if [ -f "/app/renv/activate.R" ]; then /usr/bin/R --no-save --slave -e 'renv::restore()'; fi;
+
+FROM virtualstaticvoid/heroku-docker-r:plumber
+ENV PORT=8080
+CMD ["/usr/bin/R", "--no-save", "--gui-none", "-f", "/app/app.R"]
