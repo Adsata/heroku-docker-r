@@ -1,4 +1,4 @@
-FROM Adsata/heroku-docker-r:plumber
+FROM virtualstaticvoid/heroku-docker-r:plumber
 
 # ONBUILD will copy application files into the container
 #  and execute init.R (if it exists) and restore packrat packages (if they exist)
