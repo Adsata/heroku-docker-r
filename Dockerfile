@@ -1,4 +1,5 @@
 
+RUN chmod 700 start.sh
 
 # plumber dependencies
 RUN export DEBIAN_FRONTEND=noninteractive \
