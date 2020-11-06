@@ -39,8 +39,9 @@ FROM Adsata/heroku-docker-r
 # Heroku will override the PORT value at runtime
 ENV PORT=8080
 
+ENTRYPOINT ["/usr/local/src/start.sh"]
 # override the base image CMD to run Plumber
-CMD ["/usr/bin/R", "--no-save", "--gui-none", "-f", "/app/app.R"]
+CMD ["plumber.R"]
 
 ARG BASE_IMAGE
 
