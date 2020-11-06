@@ -30,7 +30,7 @@ ONBUILD RUN if [ -f "/app/packrat/init.R" ]; then /usr/bin/R --no-init-file --no
 # on build, renv restore packages
 ONBUILD RUN if [ -f "/app/renv/activate.R" ]; then /usr/bin/R --no-save --slave -e 'renv::restore()'; fi;
 
-FROM virtualstaticvoid/heroku-docker-r:build
+FROM Adsata/heroku-docker-r:build
 
 # ONBUILD will copy application files into the container
 #  and execute init.R (if it exists) and restore packrat packages (if they exist)
