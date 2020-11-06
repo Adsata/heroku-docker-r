@@ -1,4 +1,4 @@
-my_packages = c("Plumber.R")
+my_packages = c("plumber")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
