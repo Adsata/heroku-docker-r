@@ -4,6 +4,7 @@
 #* @param msg The message to echo
 #* @get /echo
 echo <- function(msg=""){
+  print("succeeded")
   list(msg = paste0("The message is: '", msg, "'"))
 }
 
